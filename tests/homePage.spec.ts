@@ -1,8 +1,8 @@
-import { test, expect, Page, BrowserContext } from '@playwright/test';
-import { LOGIN, PASS, URL } from "../login.config";
+import { test, expect, Page } from '@playwright/test';
+import { URL } from "../login.config";
 import { HomePage } from '../helpers/HomePage';
 
-test.describe("ddd", () => {
+test.describe("first Trello tests", () => {
   let page: Page;
   let homePage: HomePage;
 
@@ -21,8 +21,5 @@ test.describe("ddd", () => {
     await expect(page).toHaveTitle('Boards | Trello');
   });
 
-  test('has title Trello22', async ({ page }) => {
-    await expect(page).toHaveTitle(/Trello/);
-  });
 
 });
