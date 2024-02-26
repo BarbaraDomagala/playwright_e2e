@@ -21,7 +21,7 @@ test.describe("ddd", () => {
     await expect(page).toHaveTitle('Boards | Trello');
   });
 
-  test('has title Trello', async ({ page }) => {
+  test('has title Trello22', async ({ page }) => {
     await expect(page).toHaveTitle(/Trello/);
   });
 
